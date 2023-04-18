@@ -1,3 +1,39 @@
+//
+//
+// import 'package:firebase_core/firebase_core.dart';
+// import 'package:flutter/cupertino.dart';
+// import 'package:flutter/material.dart';
+// import 'package:shared_preferences/shared_preferences.dart';
+// import 'package:stack/first.dart';
+//
+// import 'Model.dart';
+//
+// Future<void> main()
+// async {
+//   WidgetsFlutterBinding.ensureInitialized();
+//   await Firebase.initializeApp();
+//
+//   Model.prefs = await SharedPreferences.getInstance();
+//
+//   int reg = Model.prefs!.getInt('registered') ?? 0;
+//
+//   runApp(
+//     reg == 0 ?
+//     MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: Login(),
+//     ) : MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: first(),
+//     ),
+//   );
+// }
+
+
+
+
+
+
 import 'package:flutter/material.dart';
 import 'package:stack/first.dart';
 import 'package:lottie/lottie.dart';

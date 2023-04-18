@@ -1,8 +1,46 @@
 
+
 import 'package:flutter/material.dart';
 
 class Module
 {
+
+  static List<String> food_name = [];
+  static List<double> food_price = [];
+  static List<int> food_qty = [];
+
+
+  double? total(){
+    double tot = 0.0;
+    for(int i = 0; i<food_qty.length; i++){
+      tot = tot + (food_qty[i] * food_price[i]);
+    }
+
+    return tot;
+  }
+
+  double gst(){
+    double tot = 0.0;
+    for(int i = 0; i<food_qty.length; i++){
+      tot = tot + (food_qty[i] * food_price[i]);
+    }
+
+    double gs = tot * 0.18;
+
+    return gs;
+  }
+
+  double pay(){
+    double tot = 0.0;
+    for(int i = 0; i<food_qty.length; i++){
+      tot = tot + (food_qty[i] * food_price[i]);
+    }
+
+    double gs = tot * 0.18;
+
+    double pa = tot + gs;
+    return pa;
+  }
 
   static double theight = 0;
   static double twidth = 0;

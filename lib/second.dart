@@ -46,9 +46,7 @@ class _SecondState extends State<Second> {
     19,
     20
   ];
-  List<String> food_name = [];
-  List<double> food_price = [];
-  List<int> food_qty = [];
+
   int pos = 0;
   List<int> Default = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
   PageController pageController = PageController();
@@ -286,14 +284,14 @@ class _SecondState extends State<Second> {
                                       pos = index;
 
                                       if (Default[index] != 0) {
-                                        food_name.add(item[index]);
-                                        food_price.add(Item_price[index]);
-                                        food_qty.add(Default[index]);
+                                        Module.food_name.add(item[index]);
+                                        Module.food_price.add(Item_price[index]);
+                                        Module.food_qty.add(Default[index]);
 
                                       } else {
-                                        food_name.remove(item[index]);
-                                        food_price.remove(Item_price[index]);
-                                        food_qty.remove(Default[index]);
+                                        Module.food_name.remove(item[index]);
+                                        Module.food_price.remove(Item_price[index]);
+                                        Module.food_qty.remove(Default[index]);
                                       }
                                     });
                                   },
@@ -309,7 +307,7 @@ class _SecondState extends State<Second> {
                 onTap: () {
                   Navigator.push(context, MaterialPageRoute(
                     builder: (context) {
-                      return third(food_name, food_price, food_qty);
+                      return third();
                     },
                   ));
                 },

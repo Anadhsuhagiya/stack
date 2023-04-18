@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "213666781035",
+    "firebase_url": "https://foodmenu-b25f7-default-rtdb.firebaseio.com",
+    "project_id": "foodmenu-b25f7",
+    "storage_bucket": "foodmenu-b25f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213666781035:android:60959d4c93ee4e98ff5e2e",
+        "android_client_info": {
+          "package_name": "com.example.stack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213666781035-o7lmhe2vn5u4p0m560tkjvp72duh8sqn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkM-dqE9eNfmgSqwq6siWYK5PkhPS_fZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "213666781035-o7lmhe2vn5u4p0m560tkjvp72duh8sqn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
